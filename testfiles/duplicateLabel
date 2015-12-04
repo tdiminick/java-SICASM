@@ -1,0 +1,9 @@
+ADDRES    START    100          tests duplicate 
+NOW       LDA      BEGIN       load A with (BEGIN)
+          BASE     XXX
+          LDB      XXX
+XXX       STA      THERE       Store (A) at THERE
+          RESW     1000
+BEGIN     WORD     2              
+THERE     RESW     1              
+          END      

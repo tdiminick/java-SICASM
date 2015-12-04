@@ -1,0 +1,29 @@
+***********************************
+SIC/XE assembler
+version date March 18, 2015
+Author: Tyler Diminick :: n00889574
+***********************************
+ASSEMBLER REPORT
+----------------
+	  LOC   OBJECT CODE 	 	 SOURCE CODE
+	  ---   ----------- 	 	 -----------
+001- 00100        	 	 	 	 ADDRES    START    100              
+002- 00100  03202a	 	 	 	 NOW       LDA     =X'01'       LOAD A LITERAL
+003- 00103  032028	 	 	 	           LDA     BEGIN
+004- 00106  012025	 	 	 	           LDA     #BEGIN
+005- 00109  022022	 	 	 	           LDA     @BEGIN
+006- 0010C  010064	 	 	 	           LDA      #100
+007- 0010F  020064	 	 	 	           LDA      @100
+008- 00112  030064	 	 	 	           LDA      100
+009- 00115  03100015	 	 	           +LDA     BEGIN
+010- 00119  01100011	 	 	           +LDA     #BEGIN
+011- 0011D  0210000D	 	 	           +LDA     @BEGIN
+012- 00121  01100064	 	 	           +LDA      #100
+013- 00125  02100064	 	 	           +LDA      @100
+014- 00129  03100064	 	 	           +LDA      100
+015- 0012D        	 	 	 	           LTORG        
++01+ 0012D  01	 	 	 	 	 =X'01'   BYTE      X'01'
+016- 0012E  000002	 	 	 	 BEGIN     WORD     2              
+017- 00131        	 	 	 	 THERE     RESW     1              
+018- 00134        	 	 	 	 FFF       RESW     1
+019- 00137        	 	 	 	           END      NOW 

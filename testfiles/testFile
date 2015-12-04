@@ -1,0 +1,19 @@
+ADDRES    START    100              
+NOW       LDA     =X'01'       LOAD A LITERAL
+          LDA     BEGIN
+          LDA     #BEGIN
+          LDA     @BEGIN
+          LDA      #100
+          LDA      @100
+          LDA      100
+          +LDA     BEGIN
+          +LDA     #BEGIN
+          +LDA     @BEGIN
+          +LDA      #100
+          +LDA      @100
+          +LDA      100
+          LTORG
+BEGIN     WORD     2              
+THERE     RESW     1              
+FFF       RESW     1
+          END      NOW 

@@ -1,0 +1,34 @@
+***********************************
+SIC/XE assembler
+version date March 18, 2015
+Author: Tyler Diminick :: n00889574
+***********************************
+ASSEMBLER REPORT
+----------------
+	  LOC   OBJECT CODE 	 	 SOURCE CODE
+	  ---   ----------- 	 	 -----------
+001- 00100        	 	 	 	 EXAM      START   100
+002- 00100  75000e	 	 	 	 EXA       LDT     #14
+003- 00103  9050	 	 	 	           ADDR    T,A
+004- 00105  1b201f	 	 	 	           ADD     SEC
+005- 00108  0fa027	 	 	 	           STA     ANS,X
+006- 0010B        	 	 	 	           BASE    BIG
+007- 0010B  69202d	 	 	 	           LDB     #BIG
+008- 0010E  6e2027	 	 	 	           LDS     @ONE
+009- 00111  0f100BDE	 	 	           +STA     B
+010- 00115  772012	 	 	 	           LDT     =X'1AB9'
+011- 00118  6f2011	 	 	 	           LDS     =C'EON'
+012- 0011B  012fe2	 	 	 	           LDA     #EXA
+013- 0011E  0f200e	 	 	 	           STA      NUM
+014- 00121  3e200b	 	 	 	           J       @NUM
+015- 00124  4f0000	 	 	 	           RSUB        
+016- 00127  fffff5	 	 	 	 SEC       WORD    -11 
+017- 0012A        	 	 	 	           LTORG           
++01+ 0012A  1AB9	 	 	 	 =X'1AB9'   BYTE      X'1AB9'
++02+ 0012C  454f4e	 	 	 	 	 =C'EON'   BYTE      C'EON'
+018- 0012F        	 	 	 	 NUM       RESW    1   
+019- 00132        	 	 	 	 ANS       RESW    2
+020- 00138  00000d	 	 	 	 ONE       WORD    13   
+021- 0013B        	 	 	 	 BIG       RESW    1000 
+022- 00CF3        	 	 	 	 B         RESW    1    
+023- 00CF6        	 	 	 	           END     EXA

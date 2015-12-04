@@ -1,0 +1,31 @@
+***********************************
+SIC/XE assembler
+version date March 18, 2015
+Author: Tyler Diminick :: n00889574
+***********************************
+ASSEMBLER REPORT
+----------------
+	  LOC   OBJECT CODE 	 	 SOURCE CODE
+	  ---   ----------- 	 	 -----------
+001- 00100        	 	 	 	           START    100
+002- 00100  03201c	 	 	 	           LDA      LBL
+003- 00103  01002d	 	 	 	           LDA      #45
+004- 00106  022016	 	 	 	           LDA      @LBL
+005- 00109  03100012	 	 	           +LDA     LBL
+006- 0010D  03a00f	 	 	 	 UP        LDA      LBL,X
+007- 00110  01200c	 	 	 	           LDA      #LBL
+008- 00113  012bbb	 	 	 	           LDA      #NLB
+009- 00116  1d2009	 	 	 	           SUB      #BEG
+010- 00119        	 	 	 	           BASE      LBL
+011- 00119  6b2003	 	 	 	           LDB       LBL
+012- 0011C  4f0000	 	 	 	           RSUB        
+013- 0011F  000032	 	 	 	 LBL       WORD     50
+014- 00122        	 	 	 	 BEG       RESW     1000
+015- 00CDA        	 	 	 	 NLB       RESW     1
+016- 00CDD        	 	 	 	           J        UP
+********** ERROR: Displacement out of range PC relative and for BASE value [on line 16]
+017- 00CE0        	 	 	 	           LDA      NEW
+********** ERROR: Displacement out of range PC relative and for BASE value [on line 17]
+018- 00CE3        	 	 	 	           RESW     1000
+019- 0189B  00000a	 	 	 	 NEW       WORD     10
+020- 0189E        	 	 	 	           END        

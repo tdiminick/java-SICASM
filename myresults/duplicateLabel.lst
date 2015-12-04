@@ -1,0 +1,18 @@
+***********************************
+SIC/XE assembler
+version date March 18, 2015
+Author: Tyler Diminick :: n00889574
+***********************************
+ASSEMBLER REPORT
+----------------
+	  LOC   OBJECT CODE 	 	 SOURCE CODE
+	  ---   ----------- 	 	 -----------
+001- 00100        	 	 	 	 ADDRES    START    100          tests duplicate 
+002- 00100  032bbb	 	 	 	 NOW       LDA      BEGIN       load A with (BEGIN)
+003- 00103        	 	 	 	           BASE     XXX
+004- 00103  6b2000	 	 	 	           LDB      XXX
+005- 00106  0f2bbe	 	 	 	 XXX       STA      THERE       Store (A) at THERE
+006- 00109        	 	 	 	           RESW     1000
+007- 00CC1  000002	 	 	 	 BEGIN     WORD     2              
+008- 00CC4        	 	 	 	 THERE     RESW     1              
+009- 00CC7        	 	 	 	           END      

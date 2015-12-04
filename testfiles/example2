@@ -1,0 +1,20 @@
+          START    100
+          LDA      LBL
+          LDA      #45
+          LDA      @LBL
+          +LDA     LBL
+UP        LDA      LBL,X
+          LDA      #LBL
+          LDA      #NLB
+          SUB      #BEG
+          BASE      LBL
+          LDB       LBL
+          RSUB
+LBL       WORD     50
+BEG       RESW     1000
+NLB       RESW     1
+          J        UP
+          LDA      NEW
+          RESW     1000
+NEW       WORD     10
+          END
